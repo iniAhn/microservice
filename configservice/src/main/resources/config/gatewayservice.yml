@@ -18,19 +18,19 @@ spring:
           enabled: true
       routes:
       - id: employee-service
-        uri: lb://employee-service
+        uri: lb://employeeservice
         predicates:
         - Path=/employee/**
         filters:
         - RewritePath=/employee/(?<path>.*), /$\{path}
       - id: department-service
-        uri: lb://department-service
+        uri: lb://departmentservice
         predicates:
         - Path=/department/**
         filters:
         - RewritePath=/department/(?<path>.*), /$\{path}
       - id: organization-service
-        uri: lb://organization-service
+        uri: lb://organizationservice
         predicates:
         - Path=/organization/**
         filters:

@@ -4,8 +4,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import pl.piomin.services.employee.model.Employee;
-import pl.piomin.services.employee.repository.EmployeeRepository;
+import com.crossent.services.employeeservice.model.Employee;
+import com.crossent.services.employeeservice.repository.EmployeeRepository;
 
 import java.util.List;
 

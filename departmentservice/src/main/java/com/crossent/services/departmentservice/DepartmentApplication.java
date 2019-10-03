@@ -28,7 +28,7 @@ public class DepartmentApplication {
 	public Docket swaggerPersonApi10() {
 		return new Docket(DocumentationType.SWAGGER_2)
 				.select()
-					.apis(RequestHandlerSelectors.basePackage("pl.piomin.services.department.controller"))
+					.apis(RequestHandlerSelectors.basePackage("com.crossent.services.departmentservice.controller"))
 					.paths(PathSelectors.any())
 				.build()
 				.apiInfo(new ApiInfoBuilder().version("1.0").title("Department API").description("Documentation Department API v1.0").build());

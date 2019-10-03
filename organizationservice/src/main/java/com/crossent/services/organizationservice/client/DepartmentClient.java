@@ -7,7 +7,7 @@ import com.crossent.services.organizationservice.model.Department;
 
 import java.util.List;
 
-@FeignClient(name = "department-service")
+@FeignClient(name = "departmentservice")
 public interface DepartmentClient {
 
 	@GetMapping("/organization/{organizationId}")

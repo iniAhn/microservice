@@ -14,10 +14,10 @@ zuul:
   routes:
     department:
       path: /department/**
-      serviceId: department-service
+      serviceId: departmentservice
     employee:
       path: /employee/**
-      serviceId: employee-service
+      serviceId: employeeservice
     organization:
       path: /organization/**
-      serviceId: organization-service
+      serviceId: organizationservice

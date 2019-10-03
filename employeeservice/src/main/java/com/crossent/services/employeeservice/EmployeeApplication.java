@@ -26,7 +26,7 @@ public class EmployeeApplication {
 	public Docket swaggerPersonApi10() {
 		return new Docket(DocumentationType.SWAGGER_2)
 				.select()
-					.apis(RequestHandlerSelectors.basePackage("pl.piomin.services.employee.controller"))
+					.apis(RequestHandlerSelectors.basePackage("com.crossent.services.employeeservice.controller"))
 					.paths(PathSelectors.any())
 				.build()
 				.apiInfo(new ApiInfoBuilder().version("1.0").title("Employee API").description("Documentation Employee API v1.0").build());
