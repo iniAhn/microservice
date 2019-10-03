@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/configservice/configservice.iml" filepath="$PROJECT_DIR$/configservice/configservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/departmentservice/departmentservice.iml" filepath="$PROJECT_DIR$/departmentservice/departmentservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/discoveryservice/discoveryservice.iml" filepath="$PROJECT_DIR$/discoveryservice/discoveryservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/employeeservice/employeeservice.iml" filepath="$PROJECT_DIR$/employeeservice/employeeservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gatewayservice/gatewayservice.iml" filepath="$PROJECT_DIR$/gatewayservice/gatewayservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/organizationservice/organizationservice.iml" filepath="$PROJECT_DIR$/organizationservice/organizationservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/proxyservice/proxyservice.iml" filepath="$PROJECT_DIR$/proxyservice/proxyservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/template-spring-microservice.iml" filepath="$PROJECT_DIR$/template-spring-microservice.iml" />
+    </modules>
+  </component>
+</project>

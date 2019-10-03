@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: departmentservice
+  cloud:
+    config:
+      uri: http://localhost:18088

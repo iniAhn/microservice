@@ -1,0 +1,24 @@
+node('dind-node') {
+  withMaven(maven:'M3') {
+    stage('Checkout') {
+      git url: 'https://github.com/iniAhn/microservice.git', credentialsId: 'iniAhn', branch: 'master'
+    }
+    stage('Build') {
+      dir('configservice') {
+        sh 'mvn clean install'
+        def pom = readMavenPom file:'pom.xml'
+        print pom.version
+        env.version = pom.version
+        currentBuild.description = "Release: ${env.version}"
+      }
+    }
+    stage('Image') {
+      dir ('configservice') {
+        docker.withRegistry('https://127.0.0.1:5000') {
+          def app = docker.build "iniAhn/configservice:${env.version}"
+          app.push()
+        }
+      }
+    }
+  }
+}
