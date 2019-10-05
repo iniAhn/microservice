@@ -1,5 +1,5 @@
 FROM openjdk:8-jre-alpine
-ENV APP_FILE configervice-1.0-SNAPSHOT.jar
+ENV APP_FILE configervice-0.0.1-SNAPSHOT.jar
 ENV APP_HOME /app
 EXPOSE 18088
 COPY target/$APP_FILE $APP_HOME/
